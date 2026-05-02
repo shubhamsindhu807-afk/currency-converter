@@ -55,7 +55,7 @@ const updateExchangeRate = async () => {
     msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
   } catch (error) {
     console.log(error);
-    msg.innerText = "Something went wrong 😢";
+    msg.innerText = "Something went wrong ";
   }
 };
 
