@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"/>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+
+<body>
+
+  <!-- LEFT PANEL -->
+  <div class="left-panel">
+  <h1>Global Currency Exchange</h1>
+  <p>
+    Real-time currency conversion with a sleek, modern interface.
+    Fast, accurate, and beautifully designed.
+  </p>
+
+  <div class="stats">
+    <div>
+      <h3>150+</h3>
+      <p>Currencies</p>
+    </div>
+    <div>
+      <h3>Live</h3>
+      <p>Exchange Rates</p>
+    </div>
+    <div>
+      <h3>24/7</h3>
+      <p>Updates</p>
+    </div>
+  </div>
+</div>
+
+  <!-- RIGHT PANEL -->
+  <div class="right-panel">
+    <div class="container">
+      <h2>Convert Money</h2>
+
+      <form>
+        <!-- Amount -->
+        <div class="amount">
+          <p>Enter Amount</p>
+          <input type="number" value="1" min="1"/>
+        </div>
+
+        <!-- Dropdown -->
+        <div class="dropdown">
+
+          <!-- FROM -->
+          <div class="from">
+            <p>From</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/US/flat/64.png"/>
+              <select name="from"></select>
+            </div>
+          </div>
+
+          <!-- SWAP -->
+          <i class="fa-solid fa-arrow-right-arrow-left" title="Swap"></i>
+
+          <!-- TO -->
+          <div class="to">
+            <p>To</p>
+            <div class="select-container">
+              <img src="https://flagsapi.com/IN/flat/64.png"/>
+              <select name="to"></select>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- RESULT -->
+        <div class="msg">1 USD = 80 INR</div>
+
+        <!-- BUTTON -->
+        <button type="submit">Get Exchange Rate</button>
+
+      </form>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="codes.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>

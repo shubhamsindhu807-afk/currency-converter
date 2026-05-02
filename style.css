@@ -1,0 +1,177 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  min-height: 100vh;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+}
+
+/* Left Panel */
+.left-panel {
+  flex: 1;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-panel h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #38bdf8;
+}
+
+.left-panel p {
+  max-width: 400px;
+  opacity: 0.8;
+  font-size: 1.05rem;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stats h3 {
+  font-size: 1.4rem;
+  color: #38bdf8;
+}
+
+.stats p {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+/* Right Panel */
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 400px;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background: #1e293b;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* Heading */
+.container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #e2e8f0;
+}
+
+/* Input */
+form input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+  padding: 0 0.7rem;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+form input:focus {
+  border-color: #38bdf8;
+}
+
+/* Dropdown */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+/* Select Container */
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #334155;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
+  background: #0f172a;
+}
+
+.select-container img {
+  width: 2rem;
+}
+
+/* Select */
+select {
+  background: transparent;
+  border: none;
+  color: #e2e8f0;
+}
+
+/* Swap Icon */
+.dropdown i {
+  cursor: pointer;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background: #334155;
+  transition: 0.3s;
+}
+
+.dropdown i:hover {
+  background: #38bdf8;
+  color: #0f172a;
+  transform: rotate(180deg);
+}
+
+/* Message */
+.msg {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-weight: 500;
+}
+
+/* Button */
+form button {
+  width: 100%;
+  height: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0ea5e9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .right-panel {
+    padding: 2rem;
+  }
+}
